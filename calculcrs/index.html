@@ -1,0 +1,59 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="tl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Estaris Calculator</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="calculator-shell" aria-label="Brown themed calculator">
+    <header class="brand">
+      <div class="brand-left">
+        <small>Brown Theme</small>
+        <h1>Calculator</h1>
+      </div>
+      <div class="brand-name">Estaris</div>
+    </header>
+
+    <section class="display-wrap" aria-live="polite">
+      <div class="history" id="history"></div>
+      <div class="display" id="display">0</div>
+    </section>
+
+    <section class="keys">
+      <button class="btn utility reveal" data-action="clear">AC</button>
+      <button class="btn utility reveal" data-action="delete">DEL</button>
+      <button class="btn utility reveal" data-value="%">%</button>
+      <button class="btn operator reveal" data-value="/">÷</button>
+
+      <button class="btn reveal" data-value="7">7</button>
+      <button class="btn reveal" data-value="8">8</button>
+      <button class="btn reveal" data-value="9">9</button>
+      <button class="btn operator reveal" data-value="*">×</button>
+
+      <button class="btn reveal" data-value="4">4</button>
+      <button class="btn reveal" data-value="5">5</button>
+      <button class="btn reveal" data-value="6">6</button>
+      <button class="btn operator reveal" data-value="-">−</button>
+
+      <button class="btn reveal" data-value="1">1</button>
+      <button class="btn reveal" data-value="2">2</button>
+      <button class="btn reveal" data-value="3">3</button>
+      <button class="btn operator reveal" data-value="+">+</button>
+
+      <button class="btn zero reveal" data-value="0">0</button>
+      <button class="btn reveal" data-value=".">.</button>
+      <button class="btn equal reveal" data-action="calculate">=</button>
+    </section>
+
+    <div class="footer-note">small credit: Estaris</div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
